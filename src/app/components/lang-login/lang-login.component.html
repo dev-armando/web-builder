@@ -1,0 +1,11 @@
+<ion-toolbar class="bg-gradient-person" >
+  <a href="https://www.kudiska.com/">  <ion-title class="sub-text-white pc-media" >LanzaApp</ion-title> </a>
+  <ion-button routerLink="/login" style="--background: inherit; position: fixed; right: 100px; top: 0px;" >
+    <ion-icon class="sub-text-white" name="person-circle-outline"></ion-icon>
+    <span class="sub-text-white" >{{ 'login.login' | translate  }} </span>  
+  </ion-button>
+  <ion-button ngClass.xs="lang-xs" (click)="langs()" style="--background: inherit; position: fixed; right: 10px; top: 0px;" >
+    <ion-img style="width: 20px;height: 20px;margin-right: 5px;" src="./assets/flags/{{translate.currentLang}}.png"></ion-img>
+    <span class="sub-text-white" > {{translate.currentLang}}</span> 
+  </ion-button>
+</ion-toolbar>

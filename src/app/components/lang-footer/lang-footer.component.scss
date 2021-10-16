@@ -1,0 +1,54 @@
+.title-text{
+    color : #212529;
+    font-family: Montserrat,sans-serif;
+    font-size: 36px;
+}
+
+.title-text-white{
+
+    font-family: Montserrat,sans-serif;
+    font-size: 20px;
+}
+
+.sub-text-init{
+    color : #212529;
+    font-family: Montserrat,sans-serif;
+    font-size: 24px;
+}
+
+.sub-text{
+    color : #212529;
+   
+}
+.sub-text-white{
+    color :white !important;
+   
+}
+.button:hover{
+    animation: latidos .9s infinite;
+	transform-origin: center;
+}
+
+.phone-media{
+
+    display: none;
+}
+.pc-media{
+
+    display: '';
+}
+
+@media (max-width: 480px) { 
+
+    .phone-media{
+
+        display: inherit;
+    }
+
+    .pc-media{
+
+        display: none;
+    }
+    
+
+ }

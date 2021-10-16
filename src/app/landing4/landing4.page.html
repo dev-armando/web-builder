@@ -1,0 +1,30 @@
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,800;1,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+<ion-header ><app-lang-login></app-lang-login></ion-header>
+<ion-content class="gradient-background-blue" #panel >
+  <ion-grid>
+    <ion-row class="ion-align-items-center ion-justify-content-center">
+      <ion-col size-md=5>
+        <ion-img class="animate__animated animate__fadeInLeft animate__delay-1s" src="./assets/{{imgProfile}}.png"  >  </ion-img>
+      </ion-col>
+      <ion-col size-md=7 size-xs=12 >
+        <ion-text >
+          <h1 class="title-text text-trans-case" >
+            {{'landing.text_21' | translate}} <ion-button size="large" class="corazon bg-gradient-person" shape="round" ><ion-icon name="help-outline"></ion-icon></ion-button>  {{'landing.text_211' | translate}}
+          </h1>
+       
+        </ion-text>
+    </ion-col>
+    <ion-col size=12 ></ion-col>
+    <ion-col size-md=2  size-xs=6 >
+      <ion-button class="button button-block button-positive btn-blue animate__animated animate__headShake animate__delay-2s animate__infinite"  (click)="btnNext()" > 
+        {{'landing.next' | translate}}  
+        <ion-icon name="chevron-forward-outline"></ion-icon>
+      </ion-button>
+    </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>
+<ion-footer><app-lang-footer></app-lang-footer></ion-footer>

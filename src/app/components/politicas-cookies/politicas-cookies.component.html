@@ -1,0 +1,22 @@
+<div  class="poli_cook bg-light w-100 p-3 d-flex">
+    <ion-grid *ngIf="controlPoliCook" >
+      <ion-row>
+        <ion-col >
+          <span>
+          {{ 'politicas.text_1' | translate }}
+          <a class="text-link" (click)="terminos()" > <small>{{ 'footer.text_1' | translate }}</small> </a> |
+          <a class="text-link" (click)="privacidad()" > <small>{{ 'footer.text_2' | translate }}</small> </a> |
+          <a class="text-link" (click)="cookies()" > <small>{{ 'footer.text_3' | translate }}</small> </a>
+          </span>
+        </ion-col>
+        <ion-col size-md=2 size-xs=12>
+          <div class="boton d-flex align-items-content justify-content-center">
+            <button class="btn btn-primary btn-sm" (click)="desctivar()">
+              {{ 'politicas.in_agreement' | translate }}
+            </button>
+        </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+</div> 

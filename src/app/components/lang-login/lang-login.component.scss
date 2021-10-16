@@ -1,0 +1,45 @@
+.title-text{
+    color : #212529;
+    font-family: Montserrat,sans-serif;
+    font-size: 36px;
+}
+
+.title-text-white{
+
+    font-family: Montserrat,sans-serif;
+    font-size: 20px;
+}
+
+.sub-text-init{
+    color : #212529;
+    font-family: Montserrat,sans-serif;
+    font-size: 24px;
+}
+
+.sub-text{
+    color : #212529;
+   
+}
+.sub-text-white{
+    color : #dbdbdb !important;
+   
+} 
+.pc-media{
+
+    display: '';
+}
+@media (max-width: 480px) { 
+
+    .sub-text-white{
+        font-size: 14px;
+    }
+    .pc-media{
+
+        display: none;
+    }
+    
+  
+}
+
+
+

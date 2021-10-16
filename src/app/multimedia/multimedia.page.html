@@ -1,0 +1,101 @@
+<ion-header>
+  <ion-toolbar  class="bg-gradient-person">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title style="--color:white">Multimedia</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="bg-gradient-person"  >
+  <ion-searchbar  [(ngModel)]="search"  (ngModelChange)="filterSearch()" *ngIf="controlSearch" placeholder="Puedes buscar imagenes, videos y audios"></ion-searchbar>
+  <input style="display:none;" multiple="true"  type="file" accept=".mp4, .png, .jpg, .mp3" (change)="fileSelected($event)" #chosenFile />  
+  <ion-button  *ngIf="controlSearch && controlViewContent == 'view_premium_content' " (click)="btnSetViewContent()" class="button button-block button-positive btn-blue animate__animated animate__headShake animate__delay-2s animate__infinite" style="max-width: 240px !important;" > 
+    {{  'multimedia.view_free_content'  | translate  }}
+  </ion-button>
+  <ion-button  *ngIf="controlSearch && controlViewContent == 'view_free_content' " (click)="btnSetViewContent()" class="button button-block button-positive btn-blue animate__animated animate__headShake animate__delay-2s animate__infinite" style="max-width: 240px !important;" > 
+    {{  'multimedia.view_premium_content'  | translate  }}
+  </ion-button>
+  <ion-grid *ngIf="loader[0]">
+      <ion-row  >
+        <ion-col *ngFor="let load of loader; let i = index"  size-lg=3 size-md=4  size-sm='6' size-xs='12' style="margin: auto;" [offset]='loader.length > 1 ? 0:3'  >
+          <ion-card class="text-center">
+           
+            <ion-img  *ngIf="load['type'] == 'image/jpeg' || load['type'].trim() == 'image/png'  "  [src]="load['code']"  style="height: 300px; max-width: 300px; margin: auto;" (click)="modalImg(load['code'])"   ></ion-img>
+            <ion-img *ngIf="load['type'] == 'audio/mpeg'"  src="./assets/music.jpg"  width='400'  > </ion-img>
+            <video *ngIf="load['type'] == 'video/mp4' "  (click)="modalVideo(i)" id="{{'video'+i}}"  width="400"  controls>
+              <source [src]="load['code']" type="video/mp4">
+            </video>
+            <ion-card-header style="text-align: left;">
+              <ion-card-title style="font-size: 16px;">
+                <ion-input autofocus [value]="loader[i]['name']"  [(ngModel)]="loader[i]['name']" ></ion-input>
+              </ion-card-title>
+              <ion-card-subtitle>{{ 'multimedia.type' | translate }}: {{ load['type']}}  </ion-card-subtitle>
+            </ion-card-header>
+         
+            <ion-grid>
+              <ion-row>
+                <ng-container *ngIf="control === false; else botonera" >
+                  <ion-col *ngIf="controlSearch === false; else botoneraSearch" >
+                    <ion-button  title="{{  'multimedia.save_file' | translate }}"  class="btn-primary" (click)='savePreview(i)'   >
+                      <ion-icon name="save-outline"></ion-icon>
+                    </ion-button>
+                  </ion-col>
+                  <ng-template #botoneraSearch>
+                    <ion-col *ngIf="!load['pay']">
+                      <ion-button  title="{{  'multimedia.save_file' | translate }}" class="btn-primary" (click)='savePreviewSearch(i)'   >
+                        <ion-icon name="save-outline"></ion-icon>
+                      </ion-button>
+                    </ion-col>
+                    <ion-col *ngIf="load['pay']" >
+                      <ion-button  title="{{  'multimedia.buy_file' | translate }}" class="btn-primary" (click)='buyLicense(i)'   >
+                        <ion-icon name="cart-outline"></ion-icon>
+                      </ion-button>
+                    </ion-col>
+                  </ng-template>
+                  <ion-col  >
+                    <ion-button title="{{  'multimedia.delete_file' | translate }}" class="btn-primary" (click)='deletePreview(i)'  >
+                      <ion-icon name="trash-outline"></ion-icon>
+                    </ion-button>
+                  </ion-col>
+                </ng-container>
+                <ng-template #botonera>
+                  <ion-col  >
+                    <ion-button title="{{  'multimedia.delete_file' | translate }}" class="btn-primary" (click)='delete(i)'  >
+                      <ion-icon name="trash-outline"></ion-icon>
+                    </ion-button>
+                  </ion-col>
+                </ng-template>
+                <ion-col *ngIf="load['type'] == 'audio/mpeg'"  >
+                  <ion-button  title="{{  'multimedia.play' | translate }}" *ngIf="load['name'] != audioNameAux"  class="btn-primary"  (click)="audioPlay( load['name'] , load['code'] )"  >
+                    <ion-icon  name="play-outline"></ion-icon>
+                  </ion-button>
+                  <ion-button title="{{  'multimedia.stop' | translate }}"  *ngIf="load['name'] == audioNameAux"  class="btn-primary"  (click)="audioStop()"  >
+                    <ion-icon  name="stop-outline"></ion-icon>
+                  </ion-button>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+         
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+</ion-content>
+<ion-toolbar>
+  <ion-tabs>
+    <ion-tab-bar slot="bottom" >
+      <ion-tab-button tab="folder" (click)='loadFiles()'   >
+        <ion-icon name="folder-open-outline"></ion-icon>
+        <ion-label> {{ 'multimedia.my_resources' | translate }} </ion-label>
+      </ion-tab-button>
+      <ion-tab-button tab="upload" (click)="chosenFile.click()" >
+        <ion-icon name="cloud-upload-outline"></ion-icon>
+        <ion-label>{{ 'multimedia.upload_resources' | translate }}</ion-label>
+      </ion-tab-button>
+      <ion-tab-button tab="search" (click)="btnSearchMedia()" >
+        <ion-icon name="search-outline"></ion-icon>
+        <ion-label>{{ 'multimedia.find_resources' | translate }}</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+</ion-toolbar>

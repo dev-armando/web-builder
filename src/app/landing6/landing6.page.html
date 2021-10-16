@@ -1,0 +1,37 @@
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,800;1,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+<ion-header ><app-lang-login></app-lang-login></ion-header>
+<ion-content class="gradient-background-blue" #panel >
+  <ion-grid>
+    <ion-row class="ion-align-items-center ion-justify-content-center">
+      
+      <ion-col size=12>
+        <ion-text >
+          <br>
+          <h1 class="title-text text-center">
+            {{'landing.text_39' | translate}}
+          </h1>
+          <br><br><br>
+        </ion-text>
+      </ion-col>
+      <ion-col size-md=2  size-xs=12 *ngFor="let sector_options of sector_options; let i = index"  >
+        <a class="button" style="cursor: pointer;">  
+        <ion-img class="button"  style="width: 150px; height: 150px; margin: auto; " src="./assets/option/{{i}}.png" > </ion-img>
+        <h2 class="text-center sub-text button">
+        {{ ('landing.option_' + i) | translate  }}
+        </h2>
+      </a>
+ 
+      </ion-col>
+     </ion-row>
+  </ion-grid>
+
+  <br><br><br><br><br><br><br>
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed" >
+    <ion-fab-button class="bg-gradient-person corazon"  >
+      <ion-icon  name="help-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>
+<ion-footer><app-lang-footer></app-lang-footer></ion-footer>

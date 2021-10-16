@@ -1,0 +1,57 @@
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,800;1,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+<ion-header ><app-lang-login></app-lang-login></ion-header>
+<ion-content class="gradient-background-blue" #panel >
+  <ion-grid> 
+    <ion-row class="ion-align-items-center ion-justify-content-center">
+      <ion-col size-md=5 size-xs=12 >
+        <ion-img class="animate__animated animate__fadeInLeft animate__delay-1s" src="./assets/{{imgProfile}}.png"  >  </ion-img>
+      </ion-col>
+      <ion-col size-md=7 size-xs=12 >
+        <ion-text >
+          <h1 class="title-text" >
+            {{'landing.text_31' | translate}}
+          </h1>
+          <ion-progress-bar type="indeterminate"></ion-progress-bar>
+          <h3 class="sub-text" >
+            {{'landing.text_32' | translate}}
+          </h3>
+          <ol>
+            <li class="sub-text animate__animated animate__backInRight animate__delay-1s" >
+              {{'landing.text_33' | translate}}
+            </li>
+            <li class="sub-text animate__animated animate__backInRight animate__delay-10s" >
+              {{'landing.text_34' | translate}}
+            </li>
+            <li  class="sub-text animate__animated animate__backInRight animate__delay-20s" >
+              {{'landing.text_35' | translate}}
+            </li>
+            <li *ngIf="typeOfUser == 2 || typeOfUser == 3" class="sub-text animate__animated animate__backInRight animate__delay-30s" >
+              {{'landing.text_36' | translate}}
+            </li>
+            <li *ngIf="typeOfUser == 1" class="sub-text animate__animated animate__backInRight animate__delay-40s" >
+              {{'landing.text_37' | translate}}
+            </li>
+            <li *ngIf="typeOfUser == 2"  class="sub-text animate__animated animate__backInRight animate__delay-50s" >
+              {{'landing.text_38' | translate}}
+            </li>
+        </ol>
+        </ion-text>
+    </ion-col>
+    <ion-col class="btn-next" size-md=2  size-xs=6 >
+      <ion-button class="button button-block button-positive btn-blue animate__animated animate__headShake animate__delay-2s animate__infinite"  (click)="btnNext()" > 
+        {{'landing.next' | translate}}  
+        <ion-icon name="chevron-forward-outline"></ion-icon>
+      </ion-button>
+    </ion-col>
+    </ion-row>
+  </ion-grid>
+  <br><br><br><br><br><br><br>
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed" >
+    <ion-fab-button class="bg-gradient-person corazon"  >
+      <ion-icon  name="help-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>
+<ion-footer><app-lang-footer></app-lang-footer></ion-footer>

@@ -1,0 +1,133 @@
+<ion-content ngClass.gt-xs="bg-gradient-person">
+
+  <ion-grid style="padding: 0;" class="height-100vh">
+    <ion-row   class="height-100vh ion-align-items-center  ">
+      <ion-col size-lg="8" size-md="4" fxShow.lt-md="false">
+        <ion-img class="img-singup" src="./assets/lanzaapp.png"></ion-img>
+        <div class="text-center center">
+        </div>
+ 
+      </ion-col>
+      <ion-col style="padding: 0px !important;" size-lg="4" size-md="8" size-sm="12"> 
+        <ion-card ngClass.xs="login-xs"  ngClass.gt-xs="login-gt-xs"  >
+          <ion-card-header class="text-center" >
+            <ion-img fxShow="false" fxShow.lt-md="true" class="img-login" src="https://i.ibb.co/2dK81Nh/kudiska.png"></ion-img>
+            <ion-card-title >{{'sign_up.sign_up' | translate}}</ion-card-title>
+          </ion-card-header>
+        
+          <ion-card-content>
+            <ion-grid>
+              <ion-row>
+                <ion-col >
+                  <form [formGroup]="signupForm">
+                  <ion-grid class=" center">
+                    <ion-row>
+                      <ion-col size-sm="6" size-xs="12">
+                        <ion-item >
+                          <ion-label position="floating">{{'sign_up.name.placeholder' | translate}}</ion-label>
+                          <ion-input formControlName="name"  [value]="signupForm.controls.name.value[0]?.toUpperCase() || ''" type="text"></ion-input>
+                  
+                        </ion-item>
+                        <div *ngIf="signupForm.controls.name.touched">
+                          <span class="error" *ngIf="signupForm.controls.name.errors?.required">
+                            {{'sign_up.name.required' | translate}}
+                          </span>
+                          <span class="error" *ngIf="signupForm.controls.name.errors?.pattern">
+                            {{'sign_up.name.regex' | translate}}
+                          </span>
+                        </div>
+                   
+                      </ion-col>
+                      <ion-col size-sm="6" size-xs="12">
+                        <ion-item >
+                          <ion-label position="floating">{{'sign_up.last_name.placeholder' | translate}}</ion-label>
+                          <ion-input formControlName="last_name"  [value]="signupForm.controls.last_name.value[0]?.toUpperCase() || ''"  type="text"></ion-input>
+                        </ion-item>
+                        <div *ngIf="signupForm.controls.last_name.touched">
+                          <span class="error" *ngIf="signupForm.controls.last_name.errors?.required">
+                            {{'sign_up.last_name.required' | translate}}
+                          </span>
+                          <span class="error" *ngIf="signupForm.controls.last_name.errors?.pattern">
+                            {{'sign_up.last_name.regex' | translate}}
+                          </span>
+                        </div>
+                      </ion-col>
+                      <ion-col  size="12">
+                              
+                        <ion-item >
+                          <ion-label position="floating">{{'sign_up.email.placeholder' | translate}}</ion-label>
+                          <ion-input type="email" formControlName="email"></ion-input>
+                        </ion-item>
+                        <div *ngIf="signupForm.controls.email.touched">
+                          <span class="error" *ngIf="signupForm.controls.email.errors?.required">
+                            {{'sign_up.email.required' | translate}}
+                          </span>
+                          <span class="error" *ngIf="signupForm.controls.email.errors?.pattern">
+                            {{'sign_up.email.regex' | translate}}
+                          </span>
+                        </div>
+                      </ion-col>
+                      <ion-col size-sm="6" size-xs="12">
+                        <ion-item >
+                          <ion-label position="floating">{{'sign_up.password.placeholder' | translate}}</ion-label>
+                          <ion-input [type]="controlChangePasswordText ? 'password' : 'text'" formControlName="password"></ion-input>
+                          <ion-button (click)="changePasswordText()" expand="large" shape="round" color="white" slot="end" >
+                            <ion-icon color="dark" [name]=" controlChangePasswordText ?  'eye-outline' : 'eye-off-outline' "> </ion-icon>
+                          </ion-button>
+                        </ion-item>
+                        <div *ngIf="signupForm.controls.password.touched">
+                          <span class="error" *ngIf="signupForm.controls.password.errors?.required">
+                            {{'sign_up.password.required' | translate}}
+                          </span>
+                          <span class="error" *ngIf="signupForm.controls.password.errors?.pattern">
+                            {{'sign_up.password.regex' | translate}}
+                          </span>
+                        </div>
+                      </ion-col>
+                      <ion-col size-sm="6" size-xs="12">
+                        <ion-item >
+                          <ion-label position="floating">{{'sign_up.repeat_password.placeholder' | translate}}</ion-label>
+                          <ion-input [type]="controlChangePasswordText ? 'password' : 'text'" formControlName="repeat_password"></ion-input>
+                          <ion-button (click)="changePasswordText()" expand="large" shape="round" color="white" slot="end" >
+                            <ion-icon color="dark" [name]=" controlChangePasswordText ?  'eye-outline' : 'eye-off-outline' "> </ion-icon>
+                          </ion-button>
+                        </ion-item>
+                        <div *ngIf="signupForm.controls.repeat_password.touched">
+                          <span class="error" *ngIf="signupForm.controls.repeat_password.errors?.required">
+                            {{'sign_up.repeat_password.required' | translate}}
+                          </span>
+                          <span class="error" *ngIf="signupForm.controls.repeat_password.errors?.repeatInvalid">
+                            {{'sign_up.repeat_password.repeatInvalid' | translate}}
+                          </span>
+                        </div>
+                      </ion-col>
+                      <ion-col size="12">
+                        <ion-checkbox formControlName="agree" style="vertical-align: middle;"></ion-checkbox>
+                        <span>
+                          {{'sign_up.legal.one' | translate}} <a href="https://www.kudiska.com/" target="_blank">{{'footer.terms_of_use' | translate}}</a> {{'sign_up.legal.two' | translate}} <a href="https://www.kudiska.com/#/politica/cookies" target="_blank">{{'footer.cookies' | translate}}</a> {{'sign_up.legal.three' | translate}} <a href="https://www.kudiska.com/" target="_blank">{{'footer.terms_of_use' | translate}}</a> {{'sign_up.legal.two' | translate}} <a href="https://www.kudiska.com/#/politica/privacidad" target="_blank">{{'footer.privacy_policy' | translate}}</a> {{'sign_up.legal.four' | translate}}
+                        </span>
+                      </ion-col>
+                      <ion-col size="12">
+                        <ion-checkbox formControlName="old" style="vertical-align: middle;"></ion-checkbox>
+                        <span>
+                          {{'sign_up.old' | translate}}
+                        </span>
+                      </ion-col>
+                 
+                    </ion-row>
+                  </ion-grid>
+                </form>
+                  <ion-button class="btn-primary" (click)="create()" [disabled]="signupForm.invalid || !signupForm.controls.agree.value || !signupForm.controls.old.value" expand="block" >{{'sign_up.create' | translate}}</ion-button>
+                  <div class="max-widht-300 center margin-top-10 text-center">
+                    <a routerLink="/login">{{'sign_up.back'| translate}}</a>
+                  </div>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <app-politicas-cookies></app-politicas-cookies>
+</ion-content>

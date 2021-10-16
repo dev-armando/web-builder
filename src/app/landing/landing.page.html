@@ -1,0 +1,39 @@
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,800;1,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+<ion-header >
+  <ion-toolbar class="bg-gradient-person" >
+    <ion-title class="sub-text-white" >LanzaApp</ion-title>
+    <ion-button routerLink="/login" style="--background: inherit; position: fixed; right: 100px; top: 0px;" >
+      <ion-icon class="sub-text-white" name="person-circle-outline"></ion-icon>
+      <span class="sub-text-white" >{{ 'login.login' | translate  }} </span>  
+    </ion-button>
+    <ion-button ngClass.xs="lang-xs"  style="--background: inherit; position: fixed; right: 10px; top: 0px;" >
+      <ion-img style="width: 24px;height: 24px;margin-right: 5px;" src="./assets/flags/{{translate.currentLang}}.png"></ion-img>
+      <span class="sub-text-white" > {{translate.currentLang}}</span> 
+    </ion-button>
+  </ion-toolbar>
+</ion-header>  
+<ion-content class="gradient-background-blue" #panel >
+  <ion-grid style="padding: 0;" class="height-100vh">
+    <ion-row   class="ion-align-items-center ion-justify-content-center">
+      <ion-col size=12 >
+          <h1 class="text-center title-text">LanzaApp</h1>
+          <ion-img class="text-center img-landing" src="https://i.ibb.co/2dK81Nh/kudiska.png"></ion-img>
+          <h4 class="text-center sub-text-init">
+            {{'landing.motto' | translate}}
+          </h4>
+
+          <h4 class="text-center sub-text">
+            {{'landing.welcome' | translate}}
+          </h4>
+      </ion-col>
+      <ion-col size-md=4  size-sm=6 >
+        <h2 class="text-center sub-text">
+        {{ 'loading' | translate }}
+        </h2>
+        <ion-progress-bar type="indeterminate"></ion-progress-bar>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

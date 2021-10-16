@@ -1,0 +1,314 @@
+{
+    "loading":"Cargando...",
+    "login":{
+        "msg":"Ingresa con tu cuenta de LanzaApp",
+        "email":"Correo electrónico",
+        "password":"Contraseña",
+        "remember":"Recordar sesión",
+        "login":"Iniciar Sesión",
+        "title":"LanzaApp",
+        "forgot_password":"¿Olvidaste tu contraseña?",
+        "create_account":"Crear una nueva cuenta",
+        "wrong":{
+            "title":"Credenciales invalidas",
+            "msg":"Usuario o contraseña incorrecta",
+            "button":"Aceptar"
+        },
+        "noverified":{
+            "title":"Finalizar registro",
+            "msg":"Estimado usuario, Le hemos enviado un correo electronico para terminar su registro, si no ha llegado puedes reenviar el correo ",
+            "buttonCancel":"Cancelar",
+            "buttonResend":"Reenviar correo"
+        },
+        "resend":{
+            "title":"Correo enviado",
+            "msg":"Le hemos enviado un correo para verificar su cuenta y asi poder finalizar el registro",
+            "button":"Aceptar"
+        }
+        ,"keep_session_open" : "Mantener sesion abierta"
+    },
+    "sign_up":{
+        "legal":{
+            "one":"Haga Click para Aceptar las",
+            "two":"y las",
+            "three":"de LanzaApp, así como, reconocer que la",
+            "four":"de LanzaApp se aplica a usted"
+        },
+        "old":"Soy mayor de edad",
+        "sign_up":"Crea tu cuenta en LanzaApp",
+        "name":{
+            "placeholder":"Nombre",
+            "required":"Por favor indique su nombre",
+            "regex":"Su nombre no puede contener numeros o caracteres especiales"
+
+        },
+        "last_name":{
+            "placeholder":"Apellido",
+            "required":"Por favor indique su apellido",
+            "regex":"Su apellido no puede contener numeros o caracteres especiales"
+
+        },
+        "email":{
+            "placeholder":"Correo electrónico",
+            "required":"Ingrese su Correo electrónico",
+            "regex":"Ingrese un Correo electrónico valido"
+
+        },
+        "password":{
+            "placeholder":"Contraseña",
+            "required":"La contraseña es requerida",
+            "regex":"Asegúrese de que tenga al menos 8 caracteres, incluido un número y una letra minúscula. Los caracteres especiales permitidos son . # $ % * _"
+        },
+        "repeat_password":{
+            "placeholder":"Repetir contraseña",
+            "required":"La contraseña es requerida",
+            "repeatInvalid":"La contraseña no coincide"
+        },
+        "create":"Crear cuenta",
+        "back":"Ya tengo una cuenta",
+        "success":{
+            "title":"Solo falta un paso!",
+            "msg":"Le hemos enviado un correo para verificar su cuenta y asi poder completar el registro",
+            "button":"Aceptar"
+        },
+        "wrong":{
+            "email":{
+                "title":"Correo electronico en uso",
+                "title_2" : "Error del Servidor",
+                "msg":"El Correo electronico pertenece a una cuenta registrada en LanzaApp, intente con otro",
+                "msg_2":"Credenciales de Servidor de Correos Invalido",
+                "button":"Aceptar"
+            }
+        }
+    },
+    "footer":{
+        "twitter":"Síguenos en Twitter",
+        "instagram":"Síguenos en Instagram",
+        "facebook":"Danos like en facebook",
+        "thank_you":"Gracias por apoyarnos!",
+        "follow_us":"Síguenos en nuestras redes sociales.",
+        "support":"Soporte",
+        "about_us":"¿Quiénes somos?",
+        "contact_us":"Contactanos",
+        "frequent_questions":"Preguntas frecuentes",
+        "security_advice":"Consejos de seguridad",
+        "legal":"Legal",
+        "terms_of_use":"Condiciones de uso",
+        "privacy_policy":"Política de Privacidad",
+        "return_policy":"Politica de Devoluciones",
+        "cookies":"Cookies",
+        "blog":"Blog",
+        "last_news":"Ultimas noticias",
+        "agree":"De acuerdo",
+        "cookie_msg":"Utilizamos cookies propias y de terceros para mejorar la experiencia del usuario a través de su navegación. Si continúas navegando aceptas su uso. Política de cookies y de seguridad",
+        "text_1" : "Términos y Condiciones",
+        "text_2" : "Politicas de Privacidad",
+        "text_3" : "Politicas de Cookies"
+    },
+    "profile":{
+        "last_connection":{
+            "msg":"Tu ultima conexion fue el dia",
+            "ip_address":"Mediante la direccion IP"
+        },
+        "welcome":"Bienvenida/o Sr. ",
+        "we_work":"Nos encontramos trabajando para usted"
+    },
+    "forgot":{
+        "title":"¿Tienes problemas para entrar?",
+        "subtitle":"Introduce tu correo electrónico y te enviaremos un enlace para que recuperes el acceso a tu cuenta.",
+        "email":{
+            "label":"Correo electrónico"
+
+
+        },
+        "button":"Enviar correo",
+        "back":"Volver al inicio de sesión",
+        "wrong":{
+            "title":"Correo invalido",
+            "msg":"El correo que ingresaste no se encuentra vinculado a ninguna cuenta en LanzaApp",
+            "button":"Aceptar"
+        },
+        "success":{
+            "title":"Correo enviado",
+            "msg":"Le enviamos un correo electrónico para poder recuperar su contraseña",
+            "button":"Aceptar"
+        }
+    },
+    "new_password":{
+        "title":"Recuperar contraseña",
+        "subtitle":"Por favor ingresar su nueva contraseña",
+        "invalid":{
+            "title":"Enlace invalido",
+            "subtitle":"El enlace es invalido o esta caducado",
+            "back":"Volver al inicio"
+
+        },
+        "success":{
+            "title":"Contraseña Reestablecida",
+            "msg":"Su contraseña se ha reestablecido exitosamente",
+            "button":"Aceptar"
+        },
+        "wrong":{
+            "title":"Algo salio mal",
+            "msg":"Ocurrio un error al intentar cambiar su contraseña, intentelo mas tarde",
+            "button":"Aceptar"
+        },
+
+        "password":{
+            "label":"Contraseña",
+            "required":"La contraseña es requerida",
+            "regex":"Asegúrese de que tenga al menos 8 caracteres, incluido un número y una letra minúscula"
+        },
+        "repeat_password":{
+            "label":"Repetir contraseña",
+            "required":"La contraseña es requerida",
+            "repeatInvalid":"La contraseña no coincide"
+        },
+        "button":"Reestablecer"
+    },
+    "verification":{
+        "valid":{
+            "title":"Cuenta verificada",
+            "subtitle":"Gracias por verificar tu cuenta. Ya puedes iniciar sesion en tu cuenta de kecuci!!!",
+            "back":"Ir a la app"
+        },
+        "invalid":{
+            "title":"Enlace invalido",
+            "subtitle":"El enlace es invalido o esta caducado",
+            "back":"Volver al inicio"
+        }
+    },
+    "langs":{
+        "close":"Cerrar"
+    },
+
+    "multimedia":{
+        "type" : "Tipo",
+        "my_resources" : "Mis recursos" ,
+        "upload_resources" : "Subir recursos" ,
+        "find_resources" : "Buscar recursos",
+        "delete_file" : "Eliminar Archivo",
+        "question_1" : "Esta seguro de eliminar este archivo?" ,
+        "save_file" : "Guardar Archivo",
+        "question_2" : "Esta seguro de guardar este archivo?" ,
+        "buy_file" : "Comprar Archivo",
+        "question_3" : "Esta seguro de comprar este archivo? Eliminara la marca de agua y se guardara en su galeria",
+        "play": "Reproducir Audio", 
+        "stop" : "Detener Audio",
+        "view_premium_content" : "Ver contenido premium" ,
+        "view_free_content" : "Ver contenido gratuito"
+    },
+    "menu" :{
+        "logout" : "Cerrar sesion"
+    },
+    "landing": {
+        "motto" : "Transformando Ideas en Realidades",
+        "welcome" : "BIENVENIDA @ AL CONSTRUCTORA DE PROYECTOS LANZAPP",
+        "question_1" : "¿Estas preparado para empezar?",
+        "ahead" : "Adelante",
+        "question_2" : "¿Cómo quieres que te tratemos a partir de ahora?",
+        "investor" : "Inversor",
+        "developer" : "Desarrollador",
+        "entrepreneur" : "Emprendedor",
+        "welcome_boss" : "Bienvenido Jefe,",
+        "welcome_developer" : "Bienvenido Programador,",
+        "welcome_entrepreneur" : "Bienvenido emprendedor",
+        "text_1" : "Este séra tu nuevo portal de inversiones garantizada, ¿Sabes porque? porque podras invertir sobre caballo ganador... dejame que te lo explique rapidamente;",
+        "text_2" : "Kudiska es un constructor de aplicaciones, que permite al desarrollador / emprendedor o inversor, colocar su idea en el mercado en tan solo 5 minutos.",
+        "text_3" : "Ofrecemos multiples plantillas que permitan al creador, llevar su idea a ser un hecho real, con el maximo de los detalles.",
+        "text_4" : "Conseguir los datos mas importantes de minimo producto viable, con kudiska es mas que un concepto, es una realidad... con 5 minutos, pondras en el mercado tu app y podras obtener los datos mas relevantes como cuantos se interesaron, cuantos repitieron, cuantos la usarian, cuantos pagarian por tu idea... mucha informacion de 1ª.",
+        "text_5" : "Estamos en la era digital y perderse oportunidades que pueden ser super interesantes y rentables, puede ser catastrofico... con Kudiska, el tren pasa por delante de tu pantalla.",
+        "text_6" : "Kudiska será tu nueva y mas querida herramienta de trabajo, ¿sabes porque?",
+        "text_7" : "porque podras ofrecer a tus clientes una carta de presentación rápida de lo que eres capaz de hacer, plasmar lo que quiere tu cliente sobre una maqueta y echar andar el desarrollo con una base solida, donde dejar grabado a fuego los requerimientos del trabajo, ¿quieres saber más?",
+        "text_8" : "Te ofrecemos multiples maquetas posibles desde aplicaciones sencillas Hasta tiendas online con gestion de pedidos.",
+        "text_9" : "Sobre la plantilla seleccionada, podras ir creando requerimientos y Estipular fases – costes – tiempos de desarrollo",
+        "text_10" : "Sobre la maqueta, también podrás ir realizando tu y tu cliente anotaciones importantes. En tu caso, podrán ser privadas.",
+        "text_11" : "Al finalizar la construcción de la maqueta, estipular las fases, requerimientos, costes... cierra el acuerdo con tu cliente y deja sellado e proyecto a fuego!",
+        "text_12" : "Te ofrecemos multiples maquetas posibles desde aplicaciones sencillas hasta tiendas online con gestion de pedidos.",
+        "text_13" : "Yo estuve en tu lugar hace muchos años y después de varios cientos de miles de euros perdidos, cree kudiska. porque al igual que tu, un día me levante con una idea en la cabeza, que no hacia mas que perseguirme en que seria un gran éxito y seria millonario... y me tire a la piscina de cabeza e invertí todo lo que tenía en crear esa app. y no, no fue un éxito.",
+        "text_14" : "Ahora pongo en tus manos, la oportunidad de que tu hagas realidad en tan solo 5 minutos, esa gran idea y la pongas en el mercado",
+        "text_15" : "No te asustes, es super fácil, no necesitas saber nada de informática, solo seguir los pasos y leer con tranquilidad... Y si, es gratis!",
+        "text_16" : "Pero ojo, no te voy a engañar... Hay herramientas que son de pago, herramientas que te informaran al detalle por muy poco dinero, pero puedes no usarlas y tener tu proyecto totalmente gratis en el mercado.",
+        "text_17" : "Si tu idea es buena, kudiska te lo dira con datos 100% reales",
+        "text_18" : "Si tu proyecto tiene futuro y debes invertir en el, lo sabrás en muy poco tiempo.",
+        "text_19" : "Si ademas, quieres que tu proyecto lo vean grandes inversores e inviertan en él...",
+        "text_20" : "Manos a la obra... Demos forma a tu proyecto juntos te presento a pepe y juntos vais a poder crear tu proyecto!",
+        "text_21" : "SI NECESITAS AYUDA EN EL PROCESO, PULSA EN EL SIMBOLO",
+        "text_211" : "QUE TE ACOMPAÑARA EN TODO EL PROCESO",
+        "text_22" : "Hay varios tipos de aplicaciones",
+        "text_23" : "Las que son web, que quiere decir que no la vas a encontrar en la tienda de aplicaciones de tu móvil, que tendrás que ir a buscarla por tu motor de búsqueda habitual en internet como son google, bing...",
+        "text_24" : "Las que son móvil y esto quiere decir que te la puedes encontrar en el marketplaces – tienda de aplicaciones de tu móvil android e ios para poder descargar. ",
+        "text_25" : "Y las que tienen ambos casos, web y móvil.",
+        "text_26" : "Normalmente ya todos los desarrollos – aplicaciones, son responsivas y esto quiere decir, que se adapta a la pantalla desde donde se esta viendo la aplicación (pc, tablet y móvil) pudiendo cambiar bastante de un ordenador a un móvil, ocultando menú de opciones, cambiando de sitio botones...",
+        "text_27" : "Lo que vamos a crear aquí contigo es una maqueta – mockup, que el usuario, que es la persona que visitara tu proyecto, no se dará cuenta hasta el final de que no esta terminado del todo, porque el objetivo es, que en su visita, el piense en todo momento que esta terminada y funcionando perfectamente, de esta manera, nos ofrecerá una trazabilidad completa (información sobre los visitantes que hemos tenido y su comportamiento en la visita).",
+        "text_28" : "En el mundo de las aplicaciones, existen los inversores, que a su vez pueden representar pre-semilla, semilla, incubadoras, aceleradora... pero que en todos los casos, requiere de una inversión inicial por parte del emprendedor para llevar algo a sus manos, que se ha tangible. Kudiska te lo dará e incluso puede que te contacte alguno, si pones tu proyecto como público.",
+        "text_29" : "Producto mínimo viable, esto te lo proporciona kudiska, un producto en el mercado por el mínimo de inversión posible que puede ser desde 0€ y te dirá si esa gran idea que tienes en la cabeza, es exitosa!",
+        "text_30" : "Para que sector o sectores, la identificas más",
+        "text_31" : "ESTAMOS CARGANDO EL CONSTRUCTOR... ",
+        "text_32" : "MIENTRAS, DEJAME DECIRTE TODO LO QUE PUEDES HACER CON LANZAPP:",
+        "text_33" : "PODRAS CREAR TU PAGINA WEB PARA DIFERENTES FINALIDADES – TEMATICAS CON NUESTRAS PLANTILLAS DE UNA MANERA RAPIDA Y SENCILLA... DESDE UN CURRICULUM, UNA PRESENTACION DE UN PROYECTO O EMPRESA, LA CREACION DE UN DOSSIER COMERCIAL, PRESENTACION DE SERVICIOS O PRODUCTOS, MANUALES...",
+        "text_34" : "LANZA AL MERCADO UNA TIENDA ONLINE, DONDE EXPONER X PRODUCTOS Y SERVICIOS CON LOS QUE CREES PODER TENER ÉXITO Y TESTEA SU VIABILIDAD.",
+        "text_35" : "CONSTRUYE FACILMENTE ESE PROYECTO DIGITAL QUE TIENE POTENCIAL TANTO EN VERSION PC, TABLET O MOVIL, LANZANDO EN POCOS MINUTOS AL MERCADO TU “PRODUCTO MINIMO VIABLE” A COSTE 0.",
+        "text_36" : "EXPONER TU PROYECTO EN EL MAYOR ESCAPARATE DE STARTUP Y PODER CONSEGUIR INVERSORES.",
+        "text_37" : "ACCEDE AL BANCO DE PROYECTOS MAS GRANDE, DONDE REALMENTE VISUALIZAR CUAL TIENE POTECIAL Y RENTABILIDAD TANGIBLE, VISUALIZANDO ANALITICA DE VISITAS Y COMPORTAMIENTO SOBRE EL PRODUCTO MINIMO VIABLE LANZADO AL MERCADO.",
+        "text_38" : "PARA TI DESARROLLADOR, USA LANZAPP COMO TU HERRAMIENTA PRINCIPAL DE CARA A TUS CLIENTES….CONSTRUYE EL MOCKUP EN BASE A LAS ESPECIFICACIONES DEL CLIENTE, ESTABLECER LOS REQUERIMIENTOS Y ANALISIS FUNCIONAL DEL PROYECTO Y EXPONE DE UNA MANERA MUY TANGIBLE CON TU CLIENTE QUE NECESITA Y COMO LO VISUALIZA.",
+        "text_39": "Selecciona un sector para tu aplicación",
+        "question_3" : "¿QUIERES CREAR UN PROYECTO DE 0 O QUIERES VER PROPUESTAS DE OTROS EMPRENDEDORES?",
+        "question_4" : "Y dime que quieres hacer ahora... ¿seguir trabajando con miles de cambios que te retrasan y no te dejan rentabilizar el proyecto o quieres construir con kudiska?",
+        "question_5" : "Sumate a la era digital y súbete al tren del emprendimiento!",
+        "create_project" : "Crear Proyecto" ,
+        "creating_the_project" : "Creando el proyecto",
+        "see_proposal" : "Ir a la App" ,
+        "next" : "Siguiente",
+        "skip_introduction" : "Saltar introducción",
+        "option_0" : "Banca y finanzas ",
+        "option_1":"Recursos humanos",
+        "option_2":"Nutrición",
+        "option_3":"Textil",
+        "option_4":"Restauración u hosteleria",
+        "option_5":"Hospedería",
+        "option_6":"Educación",
+        "option_7":"Funcionario y servicios públicos",
+        "option_8":"Despacho jurídico",
+        "option_9":"Consultoria / gestoria",
+        "option_10":"Construcción",
+        "option_11":"Servicios profesionales",
+        "option_12":"Agricultura",
+        "option_13":"Ganadería",
+        "option_14":"Servicios inmobiliarios",
+        "option_15":"Producción de alimentos",
+        "option_16":"Servicios sanitarios",
+        "option_17":"Retail",
+        "option_18":"Eventos",
+        "option_19":"Marketing y publicidad",
+        "option_20":"Servicios logísticos",
+        "option_21":"Metalurgia",
+        "option_22":"Compra venta",
+        "option_23":"Fabricación producción",
+        "option_24":"Servicios comerciales",
+        "option_25":"Correduria de seguros",
+        "option_26":"Asociaciones, fundaciones y otros estamentos",
+        "option_27":"Artes gráficas",
+        "option_28":"Diseñador web",
+        "option_29":"Desarrollador de aplicaciones",
+        "option_30":"Analista de sistemas informáticos",
+        "option_31":"Telecomunicaciones",
+        "option_32":"Arquitectura",
+        "option_33":"Ingeniería técnicas",
+        "option_34":"Inversor"
+
+    },
+    "politicas" : {
+        "text_1" : "Utilizamos cookies propias y de terceros para mejorar la experiencia del usuario a través de su navegación. Si continúas navegando aceptas su uso. Política de cookies y de seguridad",
+        "in_agreement" : "De acuerdo"
+    },
+    "last_step" : "Paso Anterior",
+    "cancel_process" : "Cancelar Proceso",
+    "save_process" : "Guardar Proceso",
+    "cancel_construction" : "Cancelar construcción?" ,
+    "save_construction" : "Guardar el estado actual" ,
+    "confirmation_message" : "Mensaje de Confirmacion",
+    "yes" : "Si" ,
+    "no" : "No" 
+
+}

@@ -1,0 +1,226 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+@import "~animate.css/animate.min.css";
+
+
+
+:root{
+    --color-primary: #66a8df;
+}
+
+
+
+.text-center{
+    text-align: center !important;
+}
+
+.bg-gradient-person {
+    --background: linear-gradient(120deg,#686bea,#65c0db)!important;
+}
+
+.max-widht-300{
+    max-width: 300px !important;
+}
+.max-widht-520{
+    max-width: 520px !important;
+}
+
+.center{
+    margin: auto !important;
+}
+
+.margin-top-10{
+    margin-top: 10px !important;
+}
+
+.text-right{
+    text-align: right;
+}
+
+a {
+    background-color: #6b272700;
+    color: var(--color-primary);
+    text-decoration: none !important;
+}
+
+.btn-primary{
+    max-width: 200px !important;
+    margin: auto;
+    margin-top: 15px;
+    --background: linear-gradient(120deg,#686bea,#65c0db);
+    --color: white;
+}
+
+.btn-yellow{
+    max-width: 200px !important;
+    margin: auto;
+    margin-top: 15px;
+    --background: linear-gradient(315deg, #fce043 0%, #fb7ba2 74%);
+    --color: white;
+}
+
+.btn-blue{
+    max-width: 200px !important;
+    margin: auto;
+    margin-top: 15px;
+    --background:  linear-gradient(315deg, #5de6de 0%, #b58ecc 74%);
+    --color: white;
+}
+
+.btn-green{
+    max-width: 200px !important;
+    margin: auto;
+    margin-top: 15px;
+    --background:  linear-gradient(315deg, #20bf55 0%, #01baef 74%);
+    --color: white;
+
+
+
+}
+
+.img-login{
+    width: 200px;
+    margin: auto;
+}
+.img-singup{
+    width: 800px;
+
+    margin: auto;
+}
+
+.img-landing{
+    width: 400px;
+    margin: auto;
+}
+
+.img-pepe{
+    width: 250px;
+    margin: auto;
+}
+@media only screen and (m-width : 400px) {
+
+    .img-landing{
+        width: 300px;
+        margin: auto;
+    }
+}
+
+.login-xs{
+    width: 100vw;
+    margin: 0;
+    margin-left: -10px;
+    box-shadow: none;
+    border: none;
+    background: inherit;
+}
+
+.login-gt-xs{
+    height: 100vh;
+    margin: 0;
+    padding: 30px;
+    padding-top: 100px;
+}
+
+
+.height-100vh{
+    height: 100vh !important;
+}
+
+.error{
+    color: rgb(214, 25, 25);
+}
+
+.gradient-background-blue{
+
+    --background: linear-gradient(to top, white 0%, #dfe9f3 100%) !important;
+
+}
+
+
+.background-street{
+    background-image: url('./assets/street.jpg');
+}
+
+.text-trans-case{
+    color : #212529;
+    text-transform: lowercase;
+   
+  }
+  .text-trans-case:first-letter{
+    text-transform: uppercase;
+  }
+
+
+  @keyframes latidos {
+    from { transform: none; }
+    50% { transform: scale(1.2); }
+    to { transform: none; }
+}
+
+.corazon {
+	animation: latidos .9s infinite;
+	transform-origin: center;
+}
+
+
+/*Extend Animate*/
+
+.animate__animated.animate__delay-10s {
+    -webkit-animation-delay: calc(1s * 10);
+    animation-delay: calc(1s * 10);
+    -webkit-animation-delay: calc(var(--animate-delay) * 10);
+    animation-delay: calc(var(--animate-delay) * 10);
+  }
+
+  .animate__animated.animate__delay-20s {
+    -webkit-animation-delay: calc(1s * 20);
+    animation-delay: calc(1s * 20);
+    -webkit-animation-delay: calc(var(--animate-delay) * 20);
+    animation-delay: calc(var(--animate-delay) * 20);
+  }
+
+  .animate__animated.animate__delay-30s {
+    -webkit-animation-delay: calc(1s * 30);
+    animation-delay: calc(1s * 30);
+    -webkit-animation-delay: calc(var(--animate-delay) * 30);
+    animation-delay: calc(var(--animate-delay) * 30);
+  }
+  
+  .animate__animated.animate__delay-40s {
+    -webkit-animation-delay: calc(1s * 40);
+    animation-delay: calc(1s * 40);
+    -webkit-animation-delay: calc(var(--animate-delay) * 40);
+    animation-delay: calc(var(--animate-delay) * 40);
+  }
+
+  .animate__animated.animate__delay-50s {
+    -webkit-animation-delay: calc(1s * 50);
+    animation-delay: calc(1s * 50);
+    -webkit-animation-delay: calc(var(--animate-delay) * 50);
+    animation-delay: calc(var(--animate-delay) * 50);
+  }
+  

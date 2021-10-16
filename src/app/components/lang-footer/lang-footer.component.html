@@ -1,0 +1,22 @@
+  <ion-toolbar style="background: transparent;" >
+
+  <ion-tabs >
+    <ion-tab-bar slot="bottom" >
+      <ion-tab-button tab="last_step" (click)='btnBack()'   >
+        <ion-label>  {{ 'last_step' | translate }}  </ion-label>
+
+        <ion-icon name="arrow-back-outline"></ion-icon>
+      </ion-tab-button>
+      <ion-tab-button tab="cancel_process" (click)="btnLanding()" >
+        <ion-icon name="close-outline"></ion-icon>
+        <ion-label>  {{ 'cancel_process' | translate }}   </ion-label>
+      </ion-tab-button>
+      <ion-tab-button tab="save_process" (click)="btnSave()" >
+        <ion-icon name="save-outline"></ion-icon>
+        <ion-label>   {{ 'save_process' | translate }}   </ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+
+
+  </ion-toolbar>

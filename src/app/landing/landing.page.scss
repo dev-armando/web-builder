@@ -1,0 +1,88 @@
+.title-text{
+    color : #212529;
+    font-family: Montserrat,sans-serif;
+    font-size: 36px;
+}
+
+.title-text-white{
+
+    font-family: Montserrat,sans-serif;
+    font-size: 20px;
+}
+
+.sub-text-init{
+    color : #212529;
+    font-family: Montserrat,sans-serif;
+    font-size: 24px;
+}
+
+.sub-text{
+    color : #212529;
+    text-transform: lowercase;
+   
+}
+.sub-text:first-letter{
+    text-transform: uppercase;
+}
+.sub-text-white{
+    color : #dbdbdb !important;
+   
+}
+
+li{
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+@keyframes latidos {
+    from { transform: none; }
+    50% { transform: scale(1.2); }
+    to { transform: none; }
+}
+
+.corazon {
+	animation: latidos .9s infinite;
+	transform-origin: center;
+}
+
+.button:hover{
+    animation: latidos .9s infinite;
+	transform-origin: center;
+}
+ion-fab{
+    ion-fab-button{
+        width: 60px; 
+        height: 60px;
+
+        ion-icon{
+            font-size: 40px;
+        }
+    }
+}
+
+@media (max-width: 480px) { 
+
+  .img-landing{
+
+    width: 180px;
+    height:  180px;
+  }
+  .img-avatar-profile{
+    width: 180px;
+    height:  180px;
+    margin: auto;
+  }
+
+  .btn-next{
+    margin-top: 0px;
+  }
+
+  ion-fab{
+    ion-fab-button{
+        width: 50px; 
+        height: 50px;
+    }
+    }
+
+ }
+

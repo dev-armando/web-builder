@@ -1,0 +1,7 @@
+{
+  "name": "kudiska-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

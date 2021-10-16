@@ -1,0 +1,42 @@
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,800;1,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+<ion-header ><app-lang-login></app-lang-login></ion-header>  
+<ion-content class="gradient-background-blue" #panel >
+  <ion-grid style="padding: 0;" class="height-100vh">
+    <ion-row   class="ion-align-items-center ion-justify-content-center">
+      <ion-col size=12 >
+          <h1 class="text-center title-text">LanzaApp</h1>
+          <ion-img class="text-center img-landing animate__animated  animate__tada animate__delay-3s" src="./assets/kudiska.png"></ion-img>
+          <h4 class="text-center sub-text-init">
+            {{'landing.motto' | translate}} 
+          </h4>
+      </ion-col> 
+      <ion-col size=12  >
+          <h4 class="text-center sub-text">
+            {{'landing.question_2' | translate}}
+          </h4>
+        </ion-col>
+        <ion-col size-md=2 size-xs=12 >
+          <ion-img class="img-avatar-profile animate__animated animate__slideInLeft animate__delay-2s" src="./assets/inversor.png" ></ion-img>
+          <br>
+          <ion-button class="button button-block button-positive btn-yellow"  (click)="btnTypeOfUser(1)">{{'landing.investor' | translate}}</ion-button>
+        </ion-col>
+        <ion-col size-md=1 size-xs=0 ></ion-col>
+        <ion-col size-md=2 size-xs=12 >
+          <ion-img class="img-avatar-profile animate__animated animate__slideInUp animate__delay-1s" src="./assets/programador.png" ></ion-img>
+          <br>
+          <ion-button class="button button-block button-positive btn-blue"  (click)="btnTypeOfUser(2)">{{'landing.developer' | translate}}</ion-button>
+        </ion-col>
+        <ion-col size-md=1 size-xs=0 ></ion-col>
+        <ion-col size-md=2 size-xs=12 >
+          <ion-img class="img-avatar-profile animate__animated animate__slideInRight animate__delay-2s" src="./assets/emprendedor.png" ></ion-img>
+          <br> 
+          <ion-button class="button button-block button-positive btn-green"  (click)="btnTypeOfUser(3)">{{'landing.entrepreneur' | translate}}</ion-button> 
+        </ion-col>
+   </ion-row>
+  </ion-grid>
+  <app-politicas-cookies></app-politicas-cookies>
+</ion-content>
+<ion-footer><app-lang-footer></app-lang-footer></ion-footer>
+

@@ -1,0 +1,105 @@
+<ion-header ><app-lang-login></app-lang-login></ion-header>
+<ion-content class="gradient-background-blue" #panel>
+  <ion-grid>
+    <ion-row class="ion-align-items-center ion-justify-content-center" >
+      <ion-col size-md=5>
+        <ion-img class="animate__animated animate__fadeInLeft animate__delay-1s" src="./assets/{{imgProfile}}.png"  >  </ion-img>
+      </ion-col>
+      <ng-container *ngIf="typeOfUser == 1">
+        <ion-col size-md=7 size-xs=12 >
+          <iframe 
+          width="560" height="315" 
+          src="https://www.youtube.com/embed/-sNWKbnaFkg" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
+          <ion-text >
+            <h3 class="sub-text">
+              {{'landing.question_3' | translate}}
+            </h3>
+          </ion-text>
+      </ion-col>
+      </ng-container>
+      <ng-container *ngIf="typeOfUser == 2">
+        <ion-col size-md=7 size-xs=12  >
+          <ion-text >
+            <h1 class="title-text" >
+              {{'landing.welcome_developer' | translate}}
+            </h1>
+    
+            <h3 class="sub-text" >
+              {{'landing.text_7' | translate}}
+            </h3>
+            <h3 class="sub-text" >
+              {{'landing.text_8' | translate}}
+            </h3>
+            <ol>
+                <li class="sub-text" >
+                  {{'landing.text_12' | translate}}
+                </li>
+                <li class="sub-text" >
+                  {{'landing.text_9' | translate}}
+                </li>
+                <li class="sub-text" >
+                  {{'landing.text_10' | translate}}
+                </li>
+                <li class="sub-text" >
+                  {{'landing.text_11' | translate}}
+                </li>
+            </ol>
+            <h3 class="sub-text">
+              {{'landing.question_4' | translate}}
+            </h3>
+          </ion-text>
+      </ion-col>
+      </ng-container>
+      <ng-container *ngIf="typeOfUser == 3">
+        <ion-col size-md=7 size-xs=12 >
+            <ion-text >
+              <h1 class="title-text" >
+                {{'landing.welcome_entrepreneur' | translate}}
+              </h1>
+    
+              <h3 class="sub-text" >
+                {{'landing.text_13' | translate}}
+              </h3>
+              <h3 class="sub-text" >
+                {{'landing.text_14' | translate}}
+              </h3>
+              <h3 class="sub-text" >
+                {{'landing.text_15' | translate}}
+              </h3>
+              <h3 class="sub-text" >
+                {{'landing.text_16' | translate}}
+              </h3>
+              <ol>
+                  <li class="sub-text" >
+                    {{'landing.text_17' | translate}}
+                  </li>
+                  <li class="sub-text" >
+                    {{'landing.text_18' | translate}}
+                  </li>
+                  <li class="sub-text" >
+                    {{'landing.text_19' | translate}}
+                  </li>
+    
+              </ol>
+              <h3 class="sub-text">
+                {{'landing.question_5' | translate}}
+              </h3>
+            </ion-text>
+        </ion-col>
+      </ng-container>
+        <ion-col size=12 ></ion-col>
+      <ion-col size-md=2 >
+        <ion-button class="button button-block button-positive btn-blue"  (click)="btnNext()">{{'landing.create_project' | translate}} </ion-button>
+      </ion-col>
+      <ion-col size-md=2 >
+        <ion-button class="button button-block button-positive btn-green"  routerLink="/signup"  > {{'landing.see_proposal' | translate}} </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <app-politicas-cookies></app-politicas-cookies>
+</ion-content>
+<ion-footer><app-lang-footer></app-lang-footer></ion-footer>

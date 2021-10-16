@@ -1,0 +1,311 @@
+{
+    "loading":"Loading...",
+    "login":{
+        "msg":"Login with your LanzaApp account",
+        "email":"Email",
+        "password":"Password",
+        "remember":"Remember me",
+        "login":"Login",
+        "title":"LanzaApp",
+        "forgot_password":"Did you forget your password?",
+        "create_account":"Create a new account",
+        "wrong":{
+            "title":"Invalid credentials",
+            "msg":"Incorrect user or password",
+            "button":"Okey"
+        },
+        "noverified":{
+            "title":"Finish registration",
+            "msg":"Dear user, We have sent you an email to finish your registration, if it has not arrived you can resend the email",
+            "buttonCancel":"Cancel",
+            "buttonResend":"Resend e-mail"
+        },
+        "resend":{
+            "title":"Email sent",
+            "msg":"We have sent you an email to verify your account and thus be able to complete the registration",
+            "button":"Okey"
+        },
+        "keep_session_open": "Keep session open"
+    },
+    "sign_up":{
+        "legal":{
+            "one":"Click to Accept the",
+            "two":"and the",
+            "three":"of LanzaApp, as well as recognizing that the",
+            "four":"of LanzaApp applies to you"
+        },
+        "old":"I am of age",
+        "sign_up":"Create your account in LanzaApp",
+        "name":{
+            "placeholder":"Name",
+            "required":"Please indicate your name",
+            "regex":"Your name cannot contain numbers or special characters"
+
+        },
+        "last_name":{
+            "placeholder":"Last name",
+            "required":"Please indicate your last name",
+            "regex":"Your last name cannot contain numbers or special characters"
+
+        },
+        "email":{
+            "placeholder":"Email",
+            "required":"Enter your Email",
+            "regex":"Enter a valid email"
+
+        },
+        "password":{
+            "placeholder":"Password",
+            "required":"The password is required",
+            "regex":"Make sure it is at least 8 characters, including a number and lowercase letter"
+        },
+        "repeat_password":{
+            "placeholder":"Repeat password",
+            "required":"The password is required",
+            "repeatInvalid":"The password does not match"
+        },
+        "create":"Create Account",
+        "back":"I already have an account",
+        "success":{
+            "title":"Just one step left!",
+            "msg":"We have sent you an email to verify your account and thus be able to complete the registration",
+            "button":"Okey"
+        },
+        "wrong":{
+            "email":{
+                "title":"Email in use",
+                "title_2" : "Server error",
+                "msg":"The E-mail belongs to an account registered in LanzaApp, try another",
+                "msg_2" : "Invalid Mail Server Credentials",
+                "button":"Okey"
+            }
+        }
+    },
+    "footer":{
+        "twitter":"Follow us on Twitter",
+        "instagram":"Follow us on Instagram",
+        "facebook":"Like us on Facebook",
+        "thank_you":"Thank you for supporting us!",
+        "follow_us":"Follow us on our social networks.",
+        "support":"Support",
+        "about_us":"About us?",
+        "contact_us":"Contact Us",
+        "frequent_questions":"Frequent questions",
+        "security_advice":"Security advice",
+        "legal":"Legal",
+        "terms_of_use":"Terms of use",
+        "privacy_policy":"Privacy Policy",
+        "return_policy":"Return policy",
+        "cookies":"Cookies",
+        "blog":"Blog",
+        "last_news":"Last News",
+        "agree":"Agree",
+        "cookie_msg":"We use our own and third-party cookies to improve the user experience through browsing. If you continue browsing you accept its use. Cookies and security policy",
+        "text_1" : "Terms and Conditions",
+        "text_2" : "Privacy policies",
+        "text_3" : "Cookies Policy"
+    },
+    "profile":{
+        "last_connection":{
+            "msg":"TYour last connection was the day",
+            "ip_address":"By IP address"
+        },
+        "welcome":"Welcome Mr./Mrs.",
+        "we_work":"We are working for you"
+    },
+    "forgot":{
+        "title":"Do you have problems to enter?",
+        "subtitle":"Enter your Email and we will send you a link to regain access to your account.",
+        "email":{
+            "label":"Email"
+
+
+        },
+        "button":"Send mail",
+        "back":"Back to login",
+        "wrong":{
+            "title":"Invalid email",
+            "msg":"The email you entered is not linked to any LanzaApp account",
+            "button":"Okey"
+        },
+        "success":{
+            "title":"Email sent",
+            "msg":"We send you an Email to be able to recover your password",
+            "button":"Okey"
+        }
+    },
+    "new_password":{
+        "title":"Recover password",
+        "subtitle":"Please enter your new password",
+        "invalid":{
+            "title":"Invalid link",
+            "subtitle":"The link is invalid or expired",
+            "back":"Back to home"
+
+        },
+        "success":{
+            "title":"Password Reset",
+            "msg":"Your password has been successfully reset",
+            "button":"Okey"
+        },
+        "wrong":{
+            "title":"Something went wrong",
+            "msg":"An error occurred when trying to change your password, try again later",
+            "button":"Okey"
+        },
+
+        "password":{
+            "label":"Password",
+            "required":"The password is required",
+            "regex":"Make sure it is at least 8 characters, including a number and lowercase letter"
+        },
+        "repeat_password":{
+            "label":"Repeat password",
+            "required":"The password is required",
+            "repeatInvalid":"The password does not match"
+        },
+        "button":"Restore"
+    },
+    "verification":{
+        "valid":{
+            "title":"Verified account",
+            "subtitle":"Thanks for verifying your account. You can now log in to your LanzaApp account !!!",
+            "back":"Go to App"
+        },
+        "invalid":{
+            "title":"Invalid link",
+            "subtitle":"The link is invalid or expired",
+            "back":"Back to home"
+        }
+    },
+    "langs":{
+        "close":"Close"
+    },
+    "multimedia":{
+        "type" : "Type",
+        "my_resources" : "My resources" ,
+        "upload_resources" : "Upload resources" ,
+        "find_resources" : "Find resources",
+        "delete_file": "Delete File",
+        "question_1": "Are you sure you delete this file?",
+        "save_file": "Save File",
+        "question_2": "Are you sure to save this file?",
+        "buy_file": "Buy File",
+        "question_3": "Are you sure you buy this file? It will remove the watermark and it will be saved in your gallery",
+        "play": "Play Audio",
+        "stop": "Stop Audio",
+        "view_premium_content": "View premium content", 
+        "view_free_content": "View free content"
+    },
+
+    "menu" :{
+        "logout" : "Logout"
+    },
+    "landing": {
+       "motto" : "Transforming Ideas into Realities",
+       "welcome" : "WELCOME @ TO THE PROJECT BUILDER LANZAPP",
+       "question_1" : "Are you ready to start?",
+       "ahead" : "Ahead",
+       "question_2" : "How do you want us to treat you from now on?",
+       "investor" : "Investor",
+       "developer" : "Developer",
+       "entrepreneur" : "Entrepreneur",
+       "welcome_boss" : "Welcome Boss,",
+       "welcome_developer" : "Welcome Developer,",
+       "welcome_entrepreneur" : "Welcome entrepreneur",
+       "text_1" : "This will be your new guaranteed investment portal, do you know why? because you can invest on a winning horse... let me explain it to you quickly;",
+       "text_2" : "Kudiska is an application builder, which allows the developer / entrepreneur or investor, to place their idea on the market in just 5 minutes.",
+        "text_3" : "We offer multiple templates that allow the creator to take his idea to be a real fact, with the maximum of details.",
+        "text_4" : "Get the most important data of the minimum viable product, with kudiska it is more than a concept, it is a reality ... with 5 minutes, you will put your app on the market and you will be able to obtain the most relevant data such as how many were interested, how many repeated, how many They would use it, how many would pay for your idea ... a lot of 1st information.",
+        "text_5" : "We are in the digital age and missing opportunities that can be super interesting and profitable, it can be catastrophic ... with Kudiska, the train passes in front of your screen.",
+        "text_6" : "Kudiska will be your new and most beloved tool of work, do you know why?",
+        "text_7" : "Because you can offer your clients a quick presentation letter of what you are capable of doing, express what your client wants on a model and start the development with a solid base, where you can burn the job requirements, do you want know more?",
+        "text_8" : "We offer you multiple possible models from simple applications to online stores with order management.",
+        "text_9" : "On the selected template, you can create requirements and Stipulate phases - costs - development times",
+        "text_10" : "On the model, you can also make important annotations by you and your client. In your case, they may be private.",
+        "text_11" : "at the end of the construction of the model, stipulate the phases, requirements, costs... close the agreement with your client and leave the project sealed on fire!",
+        "text_12" : "We offer you multiple possible mockups from simple applications to online stores with order management.",
+        "text_13" : "I was in your place many years ago and after several hundred thousand euros lost, believe kudiska. because like you, one day I woke up with an idea in my head, that I was just chasing me in that it would be a great success and I would be a millionaire ... and I jumped into the pool head first and invested everything I had in create that app. and no, it was not a success.",
+        "text_14" : "Now I put in your hands, the opportunity for you to make that great idea a reality in just 5 minutes and put it on the market",
+        "text_15" : "Don't be scared, it's super easy, you don't need to know anything about computers, just follow the steps and read calmly ... And yes, it's free!",
+        "text_16" : "But be careful, I'm not going to fool you ... There are tools that are paid, tools that will inform you in detail for very little money, but you can not use them and have your project totally free on the market.",
+        "text_17" : "If your idea is good, kudiska will tell you with 100% real data",
+        "text_18" : "If your project has a future and you must invest in it, you will know it in a very short time.",
+        "text_19" : "If you also want your project to be seen by large investors and invest in it ...",
+        "text_20" : "Let's get to work ... Let's shape your project together I'll introduce you to Pepe and together you will be able to create your project!",
+        "text_21": "IF YOU NEED HELP IN THE PROCESS, CLICK ON THE SYMBOL",
+        "text_211": "THAT WILL ACCOMPANY YOU THROUGHOUT THE PROCESS",
+        "text_22" : "There are several types of applications" ,
+        "text_23" : "Those that are web, which means that you will not find it in the application store of your mobile, that you will have than go to look for it through your usual search engine on the internet such as google, bing ...",
+        "text_24" : "Those that are mobile and this means that you can find it in the marketplaces - application store of your android and ios mobile to be able to download.",
+        "text_25" : "And those that have both cases, web and mobile.",
+        "text_26" : "Normally, all the developments - applications are responsive and this means that it adapts to the screen from where the application is being viewed (pc, tablet and mobile), being able to change a lot from a computer to a mobile, hiding the options menu, changing places buttons ...",
+        "text_27" : "What we are going to create here with you is a model - mockup, that the user, who is the person who will visit your project, will not realize until the end that it is not completely finished, because the objective is that on his visit , He thinks at all times that it is finished and working perfectly, in this way, he will offer us complete traceability (information about the visitors we have had and their behavior during the visit).",
+        "text_28" : "In the world of applications, there are investors, which in turn can represent pre-seed, seed, incubators, accelerator ... but in all cases, requires an initial investment by the entrepreneur to bring something to their hands, which has become tangible. Kudiska will give it to you and someone may even contact you, if you put your project as a public.",
+        "text_29" : "Minimum viable product, this is provided by kudiska, a product on the market for the minimum possible investment that can be from € 0 and will tell you if that great idea you have in your head is successful!",
+        "text_30" : "For which sector or sectors, you identify it more",
+        "text_31": "WE ARE LOADING THE BUILDER ...",
+        "text_32": "MEANS, LET ME TELL YOU EVERYTHING YOU CAN DO WITH LANZAPP:",
+        "text_33": "YOU CAN CREATE YOUR WEB PAGE FOR DIFFERENT PURPOSES - THEMES WITH OUR TEMPLATES IN A QUICK AND SIMPLE WAY ... FROM A CURRICULUM, A PRESENTATION OF A PROJECT OR COMPANY, THE CREATION OF A COMMERCIAL DOSSIER, OR A PRESENTATION OF SERVICES PRODUCTS, MANUALS ... ",
+        "text_34": "LAUNCH THE MARKET AN ONLINE STORE, WHERE TO EXHIBIT X PRODUCTS AND SERVICES WITH WHICH YOU THINK YOU CAN BE SUCCESSFUL AND TEST ITS VIABILITY.",
+        "text_35": "EASILY BUILD THIS DIGITAL PROJECT THAT HAS POTENTIAL BOTH IN PC, TABLET OR MOBILE VERSIONS, LAUNCHING YOUR“ MINIMUM VIABLE PRODUCT ”TO THE MARKET IN A FEW MINUTES AT COST 0.",
+        "text_36": "EXPOSE YOUR PROJECT IN THE BIGGEST STARTUP SHOWCASE AND BE ABLE TO GET INVESTORS.",
+        "text_37": "ACCESS THE LARGEST BANK OF PROJECTS, WHERE TO REALLY VIEW WHICH ONE HAS POTENTIAL AND TANGIBLE PROFITABILITY, VIEWING ANALYTICAL OF VISITS AND BEHAVIOR ON THE MINIMUM VIABLE PRODUCT LAUNCHED ON THE MARKET.",
+        "text_38": "FOR YOU DEVELOPER, USE LANZAPP AS YOUR MAIN TOOL FOR YOUR CUSTOMERS.... BUILD THE MOCKUP BASED ON THE CUSTOMER'S SPECIFICATIONS, ESTABLISH THE REQUIREMENTS AND FUNCTIONAL ANALYSIS OF THE PROJECT EXPOSE IN A VERY TANGIBLE WAY WITH YOUR CUSTOMER WHAT THEY NEED AND HOW THEY VIEW IT. ",      
+        "text_39": "Select a sector for your application",
+        "question_3" : "DO YOU WANT TO CREATE A PROJECT OF 0 OR DO YOU WANT TO SEE PROPOSALS FROM OTHERS ENTREPRENEURS?",
+        "question_4" : "And tell me what do you want to do now ... continue working with thousands of changes that delay you and do not let you make the project profitable or do you want to build with kudiska?",
+        "question_5" : "Join the digital age and get on the entrepreneurship train!",
+        "create_project" : "Create Project" ,
+        "creating_the_project" : "Creating the project",
+        "see_proposal" : "Go to app" ,
+        "next" : "Next",
+        "skip_introduction" : "Skip introduction" ,
+        "option_0" : "Banking and finances",
+        "option_1": "Human resources",
+        "option_2": "Nutrition",
+        "option_3": "Textile",
+        "option_4": "Catering or hospitality",
+        "option_5": "Hospedería",
+        "option_6": "Education",
+        "option_7": "Civil servant and public services",
+        "option_8": "Legal office",
+        "option_9": "Consulting / management",
+        "option_10": "Construction",
+        "option_11": "Professional services",
+        "option_12": "Agriculture",
+        "option_13": "Livestock",
+        "option_14": "Real estate services",
+        "option_15": "Food production",
+        "option_16": "Health services",
+        "option_17": "Retail",
+        "option_18": "Events",
+        "option_19": "Marketing and advertising",
+        "option_20": "Logistics services",
+        "option_21": "Metallurgy",
+        "option_22": "Buy sell",
+        "option_23": "Manufacture production",
+        "option_24": "Commercial services",
+        "option_25": "Insurance brokerage",
+        "option_26": "Associations, foundations and other bodies" ,
+        "option_27": "Graphic arts",
+        "option_28": "Web designer",
+        "option_29": "Application developer",
+        "option_30": "Computer systems analyst",
+        "option_31": "Telecommunications",
+        "option_32": "Architecture",
+        "option_33": "Technical engineering",
+        "option_34": "Investor"
+    },
+    "politicas" : {
+        "text_1" : "We use our own and third-party cookies to improve the user experience through browsing. If you continue browsing you accept its use. Cookies and security policy",
+        "in_agreement" : "In agreement"
+      },
+  "last_step" : "Last step",
+  "cancel_process" : "Cancel process",
+  "save_process" : "Save process",
+    "cancel_construction": "Cancel construction?" ,
+    "confirmation_message": "Confirmation Message",
+    "yes": "Yes",
+    "no": "No"
+}
